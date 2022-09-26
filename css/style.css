@@ -2,33 +2,30 @@
   background: linear-gradient(243.34deg, #fbfbfb 0%, #efefef 100.49%);
 }
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
 }
 body {
   font-family: "Montserrat", sans-serif;
 }
-.coming-soon {
+.comming-soon {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,7 +33,7 @@ body {
   justify-content: center;
   text-align: center;
 }
-.coming-soon__text-block {
+.comming-soon__text-block {
   width: 100%;
   background-image: url("../img/bg__cooming-soon.svg");
   background-repeat: no-repeat;
@@ -44,23 +41,23 @@ body {
   margin-top: 6vh;
   padding-top: 98px;
 }
-.coming-soon__text-block h1 {
+.comming-soon__text-block h1 {
   color: #000000;
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 56px;
 }
-.coming-soon__text-block p {
+.comming-soon__text-block p {
   font-size: 1.3rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
 }
 @media (max-width: 768px) {
-  .coming-soon__text-block h1 {
+  .comming-soon__text-block h1 {
     font-size: 3rem;
     margin-bottom: 32px;
   }
-  .coming-soon__text-block p {
+  .comming-soon__text-block p {
     font-size: 1rem;
   }
 }
