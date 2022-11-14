@@ -1,3 +1,28 @@
+.btn-custom {
+  padding: 16px 32px;
+  border-radius: 40px;
+  transition: all 0.4s ease-in-out;
+}
+.btn-custom-primary-border {
+  border: 1px solid #5a2230;
+  color: #5a2230;
+}
+.btn-custom-primary-border:hover {
+  color: #a43e57;
+  border-color: #a43e57;
+}
+.btn-custom-secondary-text {
+  color: #000000;
+}
+.btn-custom-secondary-text:hover {
+  color: #666666;
+}
+@media (max-width: 768px) {
+  .btn-custom {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}
 .neutral-gradient {
   background: linear-gradient(243.34deg, #fbfbfb 0%, #efefef 100.49%);
 }
@@ -25,7 +50,7 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-.comming-soon {
+.coming-soon {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,7 +58,7 @@ body {
   justify-content: center;
   text-align: center;
 }
-.comming-soon__text-block {
+.coming-soon__text-block {
   width: 100%;
   background-image: url("../img/bg__cooming-soon.svg");
   background-repeat: no-repeat;
@@ -41,23 +66,60 @@ body {
   margin-top: 6vh;
   padding-top: 98px;
 }
-.comming-soon__text-block h1 {
+.coming-soon__text-block h1 {
   color: #000000;
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 56px;
 }
-.comming-soon__text-block p {
+.coming-soon__text-block p {
   font-size: 1.3rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
 }
 @media (max-width: 768px) {
-  .comming-soon__text-block h1 {
+  .coming-soon__text-block h1 {
     font-size: 3rem;
     margin-bottom: 32px;
   }
-  .comming-soon__text-block p {
+  .coming-soon__text-block p {
     font-size: 1rem;
+  }
+}
+.header-custom {
+  padding: 56px 0;
+}
+.header__log-out {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header__log-out .brand {
+  margin-right: auto;
+  transition: all 0.4s ease-in-out;
+}
+.header__log-out .brand:hover {
+  opacity: 0.8;
+}
+.header__log-out .brand img {
+  max-width: 250px;
+}
+.header__log-out .nav {
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .header-custom {
+    padding: 24px 0;
+  }
+  .header__log-out {
+    flex-direction: column-reverse;
+  }
+  .header__log-out .brand {
+    margin-right: 0;
+    margin-top: 12px;
+  }
+  .header__log-out .brand img {
+    max-width: 180px;
   }
 }

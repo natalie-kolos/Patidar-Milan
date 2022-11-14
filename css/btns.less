@@ -1,0 +1,29 @@
+// main: style.less
+.btn-custom {
+  padding: 16px 32px;
+  border-radius: 40px;
+  transition: @transition;
+}
+
+.btn-custom-primary-border {
+  border: 1px solid @secondary-patidar;
+  color: @secondary-patidar;
+  &:hover {
+    color: lighten(@secondary-patidar, 20%);
+    border-color: lighten(@secondary-patidar, 20%);
+  }
+}
+
+.btn-custom-secondary-text {
+  color: @black;
+  &:hover {
+    color: lighten(@black, 40%);
+  }
+}
+
+@media @breakpoint-mobile {
+  .btn-custom {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}
