@@ -1,6 +1,5 @@
 // main: ../style.less
-
-.hero {
+h2 .hero {
   margin-bottom: 72px;
   @media @breakpoint-mobile {
     margin-bottom: 32px;
@@ -103,22 +102,6 @@ ol.ol-promo {
   }
 }
 
-.bg-pattern {
-  background-image: url(..//img/img-bg-pattern.svg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  @media @breakpoint-mobile {
-    background-size: auto;
-  }
-}
-
-.btn-group-custom {
-  .btn {
-    margin: 0 6px 12px 6px;
-  }
-}
-
 .features {
   background-color: @secondary-patidar;
   padding: 72px 0;
@@ -150,6 +133,7 @@ ol.ol-promo {
     }
   }
 }
+
 .about-us {
   img {
     border-radius: @border-radius;
@@ -169,64 +153,6 @@ ol.ol-promo {
   }
 }
 
-.img-with-tags {
-  position: relative;
-  &::before {
-    content: "Communicate";
-    position: absolute;
-    background: @secondary-patidar;
-    color: @white;
-    padding: 16px 32px;
-    font-size: 16px;
-    border-radius: 40px;
-    top: 32px;
-    left: -24px;
-    @media @breakpoint-mobile {
-      padding: 8px 16px;
-      font-size: 12px;
-      top: 24px;
-      left: -8px;
-    }
-  }
-  &::after {
-    content: "Build a relationship";
-    position: absolute;
-    background: @gradient-primary;
-    color: @white;
-    padding: 16px 32px;
-    font-size: 16px;
-    border-radius: 40px;
-    top: 100px;
-    left: -24px;
-    @media @breakpoint-mobile {
-      padding: 8px 16px;
-      font-size: 12px;
-      top: 64px;
-      left: -8px;
-    }
-  }
-}
-
-.upperline {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.3;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: @primary-patidar;
-}
-
-.bodytext-link {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.2;
-  color: @secondary-patidar;
-  text-decoration: none;
-  &:hover {
-    color: lighten(@secondary-patidar, 20%);
-  }
-}
-
 .join-section {
   background-color: @neutral;
   padding: 56px 0;
@@ -236,39 +162,6 @@ ol.ol-promo {
     font-size: 28px;
     line-height: 1.2;
   }
-}
-
-.page-title {
-  text-align: center;
-  margin-bottom: 56px;
-  @media @breakpoint-mobile {
-    margin-bottom: 24px;
-  }
-  h1 {
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 1.3;
-    text-align: center;
-    text-transform: uppercase;
-    @media @breakpoint-mobile {
-      font-size: 20px;
-      line-height: 1.2;
-    }
-  }
-  .subtitle {
-    font-size: 20px;
-    @media @breakpoint-mobile {
-      font-size: 18px;
-    }
-  }
-}
-
-.img-rounded {
-  border-radius: @border-radius;
-}
-
-.deep-shadow {
-  box-shadow: @shadow-deep;
 }
 
 footer {
