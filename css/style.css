@@ -124,15 +124,31 @@ img {
 .header-custom {
   padding: 56px 0;
 }
+@media (max-width: 768px) {
+  .header-custom {
+    padding: 24px 0;
+  }
+}
 .header__log-out {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .header__log-out {
+    flex-direction: column-reverse;
+  }
+}
 .header__log-out .brand {
   margin-right: auto;
   transition: all 0.4s ease-in-out;
+}
+@media (max-width: 768px) {
+  .header__log-out .brand {
+    margin-right: 0;
+    margin-top: 20px;
+  }
 }
 .header__log-out .brand:hover {
   opacity: 0.8;
@@ -140,11 +156,21 @@ img {
 .header__log-out .brand img {
   max-width: 250px;
 }
+@media (max-width: 768px) {
+  .header__log-out .brand img {
+    max-width: 180px;
+  }
+}
 .header__log-out .nav {
   align-items: center;
 }
 .hero {
   margin-bottom: 72px;
+}
+@media (max-width: 768px) {
+  .hero {
+    margin-bottom: 32px;
+  }
 }
 .hero h1 {
   font-weight: 700;
@@ -153,22 +179,68 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
 .hero p {
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  .hero p {
+    font-size: 18px;
+  }
 }
 .hero .hero-inner {
   text-align: center;
 }
+.hero .hero-inner .btn-group-custom {
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .hero .hero-inner .btn-group-custom {
+    margin-top: 20px;
+  }
+}
+.alert-promo {
+  background-color: #5a2230;
+  color: #ffffff;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+.alert-promo .alert-link {
+  color: #ffffff;
+  text-decoration: none;
+}
 .about-promo {
   padding-bottom: 56px;
+}
+@media (max-width: 768px) {
+  .about-promo {
+    padding-bottom: 32px;
+  }
 }
 .about-promo h2 {
   font-weight: 600;
   font-size: 32px;
 }
+@media (max-width: 768px) {
+  .about-promo h2 {
+    font-size: 22px;
+  }
+}
 .about-promo h2 span {
   font-weight: 400;
   font-size: 28px;
+}
+@media (max-width: 768px) {
+  .about-promo h2 span {
+    font-size: 18px;
+  }
 }
 ol.ol-promo {
   list-style: none;
@@ -177,9 +249,19 @@ ol.ol-promo {
   padding-left: 0;
   margin-top: 48px;
 }
+@media (max-width: 768px) {
+  ol.ol-promo {
+    margin-top: 24px;
+  }
+}
 ol.ol-promo li {
   counter-increment: my-awesome-counter;
   display: flex;
+}
+@media (max-width: 768px) {
+  ol.ol-promo li h4 {
+    font-size: 16px;
+  }
 }
 ol.ol-promo li:before {
   content: counter(my-awesome-counter) "";
@@ -204,6 +286,15 @@ ol.ol-promo li h4 {
   background-image: url(..//img/img-bg-pattern.svg);
   background-position: bottom;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .bg-pattern {
+    background-size: auto;
+  }
+}
+.btn-group-custom .btn {
+  margin: 0 6px 12px 6px;
 }
 .features {
   background-color: #5a2230;
@@ -243,10 +334,20 @@ ol.ol-promo li h4 {
   box-shadow: 0px 11px 34px rgba(0, 0, 0, 0.18);
   margin-bottom: 32px;
 }
+@media (max-width: 768px) {
+  .about-us img {
+    margin-bottom: 24px;
+  }
+}
 .about-us h3 {
   font-weight: 600;
   font-size: 28px;
   line-height: 1.2;
+}
+@media (max-width: 768px) {
+  .about-us h3 {
+    font-size: 22px;
+  }
 }
 .img-with-tags {
   position: relative;
@@ -326,6 +427,11 @@ footer .footer-inner {
 footer .footer-inner .nav-link {
   color: #5a2230;
 }
+@media (max-width: 768px) {
+  footer .footer-inner .nav {
+    margin: 12px 0;
+  }
+}
 footer .muted {
   opacity: 0.6;
   font-size: 14px;
@@ -333,50 +439,4 @@ footer .muted {
 }
 footer.footer-split .footer-inner {
   border-top: 1px solid #dedede;
-}
-@media (max-width: 768px) {
-  .header-custom {
-    padding: 24px 0;
-  }
-  .header__log-out {
-    flex-direction: column-reverse;
-  }
-  .header__log-out .brand {
-    margin-right: 0;
-    margin-top: 20px;
-  }
-  .header__log-out .brand img {
-    max-width: 180px;
-  }
-  .hero {
-    margin-bottom: 32px;
-  }
-  .hero h1 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  .hero p {
-    font-size: 18px;
-  }
-  .about-promo {
-    padding-bottom: 32px;
-  }
-  .about-promo h2 {
-    font-size: 22px;
-  }
-  .about-promo h2 span {
-    font-size: 18px;
-  }
-  ol.ol-promo {
-    margin-top: 24px;
-  }
-  ol.ol-promo li h4 {
-    font-size: 16px;
-  }
-  .about-us img {
-    margin-bottom: 24px;
-  }
-  .about-us h3 {
-    font-size: 22px;
-  }
 }
