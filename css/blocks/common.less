@@ -1,0 +1,252 @@
+// main: ../style.less
+
+.hero {
+  margin-bottom: 72px;
+  h1 {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.3;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 20px;
+  }
+  .hero-inner {
+    text-align: center;
+  }
+}
+
+.about-promo {
+  padding-bottom: 56px;
+  h2 {
+    font-weight: 600;
+    font-size: 32px;
+    span {
+      font-weight: 400;
+      font-size: 28px;
+    }
+  }
+}
+
+ol.ol-promo {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  margin-block-start: 0;
+  padding-left: 0;
+  margin-top: 48px;
+  li {
+    counter-increment: my-awesome-counter;
+    display: flex;
+    &:before {
+      content: counter(my-awesome-counter) "";
+      background: url(..//img/img-bg-ol-li.svg);
+      background-repeat: no-repeat;
+      color: @black;
+      font-weight: bold;
+      width: 77px;
+      height: 77px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 16px;
+      flex-shrink: 0;
+    }
+    h4 {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}
+
+.bg-pattern {
+  background-image: url(..//img/img-bg-pattern.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.features {
+  background-color: @secondary-patidar;
+  padding: 72px 0;
+  color: @white;
+  h3 {
+    font-size: 30px;
+    font-weight: 500;
+    span {
+      color: @primary-patidar;
+    }
+  }
+  .features-group {
+    display: flex;
+    flex-wrap: wrap;
+    .features-block {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      @media @breakpoint-mobile {
+        width: 100%;
+      }
+      p {
+        margin-bottom: 0;
+      }
+      img {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+.about-us {
+  img {
+    border-radius: @border-radius;
+    box-shadow: @shadow-deep;
+    margin-bottom: 32px;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+
+.img-with-tags {
+  position: relative;
+  &::before {
+    content: "Communicate";
+    position: absolute;
+    background: @secondary-patidar;
+    color: @white;
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 40px;
+    top: 32px;
+    left: -24px;
+    @media @breakpoint-mobile {
+      padding: 8px 16px;
+      font-size: 12px;
+      top: 24px;
+      left: -8px;
+    }
+  }
+  &::after {
+    content: "Build a relationship";
+    position: absolute;
+    background: @gradient-primary;
+    color: @white;
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 40px;
+    top: 100px;
+    left: -24px;
+    @media @breakpoint-mobile {
+      padding: 8px 16px;
+      font-size: 12px;
+      top: 64px;
+      left: -8px;
+    }
+  }
+}
+
+.upperline {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: @primary-patidar;
+}
+
+.bodytext-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: @secondary-patidar;
+  text-decoration: none;
+  &:hover {
+    color: lighten(@secondary-patidar, 20%);
+  }
+}
+
+.join-section {
+  background-color: @neutral;
+  padding: 56px 0;
+  text-align: center;
+  h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+
+footer {
+  background-color: @neutral;
+  .footer-inner {
+    padding: 16px 0;
+    .nav-link {
+      color: @secondary-patidar;
+    }
+  }
+  .muted {
+    opacity: 0.6;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+footer.footer-split {
+  .footer-inner {
+    border-top: 1px solid #dedede;
+  }
+}
+
+@media @breakpoint-mobile {
+  .header-custom {
+    padding: 24px 0;
+  }
+  .header__log-out {
+    flex-direction: column-reverse;
+    .brand {
+      margin-right: 0;
+      margin-top: 20px;
+      img {
+        max-width: 180px;
+      }
+    }
+  }
+  .hero {
+    margin-bottom: 32px;
+    h1 {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .about-promo {
+    padding-bottom: 32px;
+    h2 {
+      font-size: 22px;
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+  ol.ol-promo {
+    margin-top: 24px;
+    li {
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
+  .about-us {
+    img {
+      margin-bottom: 24px;
+    }
+    h3 {
+      font-size: 22px;
+    }
+  }
+}

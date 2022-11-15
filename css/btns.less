@@ -5,7 +5,16 @@
   transition: @transition;
 }
 
-.btn-custom-primary-border {
+.btn-custom-secondary {
+  background-color: @secondary-patidar;
+  color: @white;
+  &:hover {
+    background-color: lighten(@secondary-patidar, 15%);
+    color: @white;
+  }
+}
+
+.btn-custom-secondary-border {
   border: 1px solid @secondary-patidar;
   color: @secondary-patidar;
   &:hover {
@@ -14,7 +23,16 @@
   }
 }
 
-.btn-custom-secondary-text {
+.btn-custom-primary {
+  background: @gradient-primary;
+  color: @white;
+  &:hover {
+    opacity: 0.8;
+    color: @white;
+  }
+}
+
+.btn-custom-text {
   color: @black;
   &:hover {
     color: lighten(@black, 40%);
