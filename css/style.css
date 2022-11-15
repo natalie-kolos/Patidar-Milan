@@ -538,3 +538,11 @@ footer .muted {
 footer.footer-split .footer-inner {
   border-top: 1px solid #dedede;
 }
+.image-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.image-block img {
+  margin: 12px;
+}
