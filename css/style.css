@@ -350,15 +350,15 @@ i.icon-file {
 .header__log-out .nav {
   align-items: center;
 }
-h2 .hero {
+.hero {
   margin-bottom: 72px;
 }
 @media (max-width: 768px) {
-  h2 .hero {
+  .hero {
     margin-bottom: 32px;
   }
 }
-h2 .hero h1 {
+.hero h1 {
   font-weight: 700;
   font-size: 38px;
   line-height: 1.3;
@@ -366,27 +366,27 @@ h2 .hero h1 {
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
-  h2 .hero h1 {
+  .hero h1 {
     font-size: 20px;
     line-height: 1.2;
   }
 }
-h2 .hero p {
+.hero p {
   font-size: 20px;
 }
 @media (max-width: 768px) {
-  h2 .hero p {
+  .hero p {
     font-size: 18px;
   }
 }
-h2 .hero .hero-inner {
+.hero .hero-inner {
   text-align: center;
 }
-h2 .hero .hero-inner .btn-group-custom {
+.hero .hero-inner .btn-group-custom {
   margin-top: 40px;
 }
 @media (max-width: 768px) {
-  h2 .hero .hero-inner .btn-group-custom {
+  .hero .hero-inner .btn-group-custom {
     margin-top: 20px;
   }
 }
@@ -648,4 +648,21 @@ footer.footer-split .footer-inner {
 .nav-steps .nav-item-steps-next i.step-icon {
   content: url(..//img/icon-step-next.svg);
   margin: 11px 0;
+}
+.error-wrap {
+  background-repeat: repeat-x;
+  background-size: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-wrap .error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.error-wrap .error-page img {
+  margin-bottom: 24px;
 }

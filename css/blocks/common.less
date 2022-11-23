@@ -1,5 +1,5 @@
 // main: ../style.less
-h2 .hero {
+.hero {
   margin-bottom: 72px;
   @media @breakpoint-mobile {
     margin-bottom: 32px;
@@ -296,6 +296,24 @@ footer.footer-split {
     i.step-icon {
       content: url(..//img/icon-step-next.svg);
       margin: 11px 0;
+    }
+  }
+}
+
+.error-wrap {
+  background-repeat: repeat-x;
+  background-size: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    img {
+      margin-bottom: 24px;
     }
   }
 }
