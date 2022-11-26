@@ -7,7 +7,7 @@
 
 .btn-custom-secondary {
   background-color: @secondary-patidar;
-  color: @white;
+  color: @white!important;
   &:hover {
     background-color: lighten(@secondary-patidar, 15%);
     color: @white;
@@ -16,7 +16,7 @@
 
 .btn-custom-secondary-border {
   border: 1px solid @secondary-patidar;
-  color: @secondary-patidar;
+  color: @secondary-patidar!important;
   &:hover {
     color: lighten(@secondary-patidar, 20%);
     border-color: lighten(@secondary-patidar, 20%);
@@ -44,4 +44,11 @@
     padding: 10px 22px;
     font-size: 14px;
   }
+}
+
+.btn-account {
+  width: 100%;
+  text-align: center;
+  border: 1px solid @secondary-patidar;
+  padding: 9px 32px;
 }

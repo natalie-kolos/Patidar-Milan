@@ -203,3 +203,71 @@ i.icon-file {
     color: #354753;
   }
 }
+.profile {
+  .profile-photo {
+    img {
+      border-radius: @border-radius;
+      width: 100%;
+      margin-bottom: 16px;
+      @media @breakpoint-mobile {
+        border-radius: @border-radius-mob;
+      }
+    }
+    .profile-photo__additional {
+      display: flex;
+      width: calc(50% - 8px);
+
+      img + img {
+        margin-left: 16px;
+      }
+    }
+  }
+  .btns {
+    a {
+      margin-bottom: 12px;
+    }
+  }
+  aside {
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      span {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      li {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        margin-bottom: 12px;
+      }
+      &.muted {
+        opacity: 0.6;
+      }
+    }
+  }
+  .profile-content {
+    padding-left: 32px;
+    h1 {
+      font-weight: 700;
+      font-size: 38px;
+      text-transform: uppercase;
+    }
+    @media @breakpoint-mobile {
+      h1 {
+        font-size: 20px;
+        line-height: 1.2;
+      }
+    }
+    a {
+      font-weight: 600;
+      color: @secondary-patidar;
+      text-decoration: none;
+    }
+  }
+}
