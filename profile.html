@@ -21,17 +21,44 @@
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     <div class="container">
-      <header class="header-custom header__log-out">
+      <header class="header-custom header__log-in navbar-light">
         <a href="index.html" class="brand"><img src="img/logo-patidar-basic.svg" alt=""></a>
-        <ul class="nav">
-          <li class="nav-item">
-            <a href="#" class="btn btn-custom btn-custom-secondary-border">Create
-              Account</a>
+        <ul class="nav mb-2 mb-lg-0 d-none d-md-flex">
+          <li class="nav-item muted"><a class="nav-link" href="#"><img src="img/icon-nav-search.svg" alt="">Search</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="btn btn-custom btn-custom-text">Sign In</a>
+          <li class="nav-item muted"><a class="nav-link" href="#"><img src="img/icon-nav-fav.svg" alt="">Favourites</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#"><img src="img/icon-nav-help.svg" alt="">Help</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img src="img/icon-nav-logout.svg" alt="">Log out</a>
           </li>
         </ul>
+        <button class="navbar-toggler d-flex d-md-none ms-auto" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><span class="navbar-toggler-icon"></span></button>
+
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav mb-2 mb-lg-0">
+              <li class="nav-item muted"><a class="nav-link" href="#"><img src="img/icon-nav-search.svg"
+                    alt="">Search</a>
+              </li>
+              <li class="nav-item muted"><a class="nav-link" href="#"><img src="img/icon-nav-fav.svg"
+                    alt="">Favourites</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#"><img src="img/icon-nav-help.svg" alt="">Help</a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img src="img/icon-nav-manage-profile.svg" alt="">Manage
+                  Profile</a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img src="img/icon-nav-security.svg" alt="">Security &
+                  Access</a></li>
+
+              <li class="nav-item"><a class="nav-link" href="#"><img src="img/icon-nav-logout.svg" alt="">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </header>
       <div class="container profile">
         <div class="row">
@@ -46,20 +73,49 @@
               </div>
               <span class="badge badge-custom badge-custom-fade">Profile not activated</span>
               <h2>Name Surname short or very long <span>/ 34 y.o.</span></h2>
-              <ul>
-                <li class="location"><i class="loc"></i> Country, State/province, City</li>
+              <div class="location"><i class="loc"></i> Country, State/province, City</div>
+              <div class="profile-photo profile-photo-mobile">
+                <img src="img/img-profile.png" alt="">
+                <div class="profile-photo__additional">
+                  <img src="img/img-profile.png" alt="">
+                  <img src="img/img-profile.png" alt="">
+                </div>
+              </div>
+              <div class="accordion accordion-account-info" id="accordionAccountInfo">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <img src="img/icon-info.svg" class="me-2" alt=""> Profile Info & Stats
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul class="profile-info">
+                        <li>Profile ID: 00001</li>
+                        <li>Renewal Date: yyyy-mm-dd</li>
+                        <li class="muted">Profile views: Not available</li>
+                        <li class="muted">Contact views: Not available</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="profile-info">
                 <li>Profile ID: 00001</li>
                 <li>Renewal Date: yyyy-mm-dd</li>
-              </ul>
-              <div class="btns">
-                <a href="#" class="btn btn-custom btn-account">Manage Profile</a>
-                <a href="#" class="btn btn-custom btn-account">Security & Access</a>
-                <a href="#" class="btn btn-custom btn-account">Favourites</a>
-                <a href="#" class="btn btn-custom btn-account">Search</a>
-              </div>
-              <ul class="muted">
-                <li>Profile views: Not available</li>
-                <li>Contact views: Not available</li>
+                <li>
+                  <div class="btns">
+                    <a href="#" class="btn btn-custom btn-account">Manage Profile</a>
+                    <a href="#" class="btn btn-custom btn-account">Security & Access</a>
+                    <a href="#" class="btn btn-custom btn-account disabled">Favourites</a>
+                    <a href="#" class="btn btn-custom btn-account disabled">Search</a>
+                  </div>
+                </li>
+                <li class="muted">Profile views: Not available</li>
+                <li class="muted">Contact views: Not available</li>
+                <li class="logout"><a href="#">Log out</a></li>
               </ul>
 
             </aside>
@@ -68,7 +124,9 @@
             <section class="profile-content">
               <h1>Welcome to Patidarmilan</h1>
               <p>In order to start your search and view other profiles we encourage you to make a payment of $... </p>
-              <a href="#" class="btn btn-custom btn-custom-secondary mb-3">Pay with a credit card</a>
+              <div class="d-flex justify-content-center justify-content-md-start">
+                <a href="#" class="btn btn-custom btn-custom-secondary mb-3">Pay with a credit
+                  card</a></div>
               <p>You will get an email about account activation after the payment is received. Feel free to <a
                   href="#">contact us</a>
                 if you have any questions</p>
