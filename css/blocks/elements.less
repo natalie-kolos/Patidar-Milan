@@ -239,7 +239,7 @@ i.icon-file {
     display: flex;
     align-items: center;
     font-size: 16px;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     &:before {
       content: url(..//img/icon-loc.svg);
       margin-right: 4px;
@@ -397,5 +397,24 @@ i.icon-file {
     .card-custom {
       padding: 0 16px;
     }
+  }
+}
+
+.title-favourites {
+  display: flex;
+  align-items: center;
+  &:after {
+    content: "23";
+    display: inline-flex;
+    background-color: @secondary-patidar;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 12px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
   }
 }

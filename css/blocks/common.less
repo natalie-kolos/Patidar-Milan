@@ -205,7 +205,7 @@ footer.footer-split {
   padding: 40px;
   box-shadow: @shadow-primary;
   @media @breakpoint-mobile {
-    padding: 24px;
+    padding: 24px 16px;
   }
   .form-control,
   .form-select {
@@ -349,7 +349,7 @@ footer.footer-split {
 }
 
 .card-custom {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   img {
     border-radius: @border-radius;
     margin-bottom: 16px;
@@ -372,6 +372,52 @@ footer.footer-split {
       font-size: 14px;
       @media @breakpoint-tablet {
         font-size: 14px;
+      }
+    }
+  }
+  .card-action {
+    a {
+      color: @gray;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      &:before {
+        content: url(..//img/icon-fav-remove.svg);
+        margin-right: 4px;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.pagination-custom {
+  .page-item {
+    .page-link {
+      border: 0;
+      &:hover {
+        background-color: transparent;
+        border-color: lighten(@secondary-patidar, 20%);
+        color: lighten(@secondary-patidar, 20%);
+      }
+    }
+    .page-link-btn {
+      border: 1px solid @secondary-patidar;
+      border-radius: 6px;
+      margin: 0 4px;
+      padding: 3px 16px 7px;
+    }
+    &:first-child {
+      .page-link {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        padding: 3px 14px 7px;
+      }
+    }
+    &:last-child {
+      .page-link {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        padding: 3px 14px 7px;
       }
     }
   }
