@@ -29,6 +29,25 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $(".carousel-adv").slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
+
 (function () {
   "use strict";
 

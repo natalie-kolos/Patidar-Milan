@@ -330,6 +330,10 @@ i.icon-file {
   font-size: 38px;
   text-transform: uppercase;
 }
+.profile .profile-content h1 span {
+  font-weight: 500;
+  font-size: 28px;
+}
 @media (max-width: 767px) {
   .profile .profile-content {
     padding-left: 0;
@@ -376,17 +380,17 @@ i.icon-file {
   background-color: #f3f5f8;
   border-color: #94a2ab;
 }
-.carousel-responsive {
+.carousel-custom {
   margin-bottom: 64px !important;
 }
-.carousel-responsive .slick-next {
+.carousel-custom .slick-next {
   top: auto;
   bottom: -56px;
   right: 0px;
   width: 31px;
   height: 31px;
 }
-.carousel-responsive .slick-next:before {
+.carousel-custom .slick-next:before {
   content: url(..//img/icon-arrow-next.svg);
   border: 1px solid #5a2230;
   padding: 2px 12px 7px 12px;
@@ -394,14 +398,14 @@ i.icon-file {
   width: 31px;
   height: 31px;
 }
-.carousel-responsive .slick-prev {
+.carousel-custom .slick-prev {
   top: auto;
   bottom: -56px;
   left: 0px;
   width: 31px;
   height: 31px;
 }
-.carousel-responsive .slick-prev:before {
+.carousel-custom .slick-prev:before {
   content: url(..//img/icon-arrow-prev.svg);
   border: 1px solid #5a2230;
   padding: 2px 12px 7px 12px;
@@ -409,17 +413,20 @@ i.icon-file {
   width: 31px;
   height: 31px;
 }
-.carousel-responsive .slick-dots {
+.carousel-custom .slick-dots {
   bottom: -38px;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
 }
-.carousel-responsive .slick-dots li button:before {
+.carousel-custom .slick-dots li button:before {
   color: #5a2230;
 }
 .carousel-responsive .carousel-responsive-element .card-custom {
   padding: 0 16px;
+}
+.carousel-adv .carousel-adv-element {
+  margin-right: 12px;
 }
 .title-favourites {
   display: flex;
@@ -950,14 +957,30 @@ footer.footer-split .footer-inner {
     font-size: 14px;
   }
 }
-.card-custom .card-action a {
+.card-custom .card-action.card-action-remove a {
   color: #354753;
+}
+.card-custom .card-action.card-action-remove a:before {
+  content: url(..//img/icon-fav-remove.svg);
+}
+.card-custom .card-action.card-action-add a {
+  color: #e2b090;
+}
+.card-custom .card-action.card-action-add a:before {
+  content: url(..//img/icon-star-primary.svg);
+}
+.card-custom .card-action.card-action-saved a {
+  color: #5a2230;
+}
+.card-custom .card-action.card-action-saved a:before {
+  content: url(..//img/icon-star-secondary.svg);
+}
+.card-custom .card-action a {
   display: flex;
   align-items: center;
   font-size: 14px;
 }
 .card-custom .card-action a:before {
-  content: url(..//img/icon-fav-remove.svg);
   margin-right: 4px;
   line-height: 1;
 }
