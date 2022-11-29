@@ -335,3 +335,32 @@ footer.footer-split {
 .muted {
   opacity: 0.6;
 }
+
+.card-custom {
+  margin-bottom: 16px;
+  img {
+    border-radius: @border-radius;
+    margin-bottom: 16px;
+  }
+  .card-description {
+    h3 {
+      font-size: 18px;
+      @media @breakpoint-tablet {
+        font-size: 14px;
+      }
+      span {
+        font-size: 14px;
+        font-weight: 400;
+        @media @breakpoint-tablet {
+          font-size: 12px;
+        }
+      }
+    }
+    .location {
+      font-size: 14px;
+      @media @breakpoint-tablet {
+        font-size: 14px;
+      }
+    }
+  }
+}
