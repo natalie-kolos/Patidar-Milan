@@ -204,6 +204,9 @@ footer.footer-split {
   border-radius: @border-radius;
   padding: 40px;
   box-shadow: @shadow-primary;
+  @media @breakpoint-mobile {
+    padding: 24px;
+  }
   .form-control,
   .form-select {
     border-radius: @border-radius;
@@ -232,6 +235,15 @@ footer.footer-split {
     border-radius: 16px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+    @media @breakpoint-mobile {
+      font-size: 18px;
+    }
   }
 }
 
