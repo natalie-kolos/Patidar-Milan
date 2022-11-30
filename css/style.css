@@ -335,6 +335,11 @@ i.icon-file {
   font-size: 28px;
 }
 @media (max-width: 767px) {
+  .profile .profile-content h1 span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
   .profile .profile-content {
     padding-left: 0;
   }
@@ -836,6 +841,13 @@ footer.footer-split .footer-inner {
     font-size: 18px;
   }
 }
+.form-custom .form-control {
+  padding: 1rem 0.75rem;
+}
+.form-custom .input-group-search button {
+  background-color: #ffffff;
+  border-radius: 16px;
+}
 .form-plain-text-custom a {
   color: #5a2230;
   text-decoration: none;
@@ -996,12 +1008,18 @@ footer.footer-split .footer-inner {
   border: 1px solid #5a2230;
   border-radius: 6px;
   margin: 0 4px;
-  padding: 3px 16px 7px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-custom .page-item .page-link-btn img {
+  max-width: inherit;
 }
 .pagination-custom .page-item:first-child .page-link {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  padding: 3px 14px 7px;
 }
 .pagination-custom .page-item:last-child .page-link {
   border-top-right-radius: 6px;
