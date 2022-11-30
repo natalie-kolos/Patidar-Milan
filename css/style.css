@@ -451,6 +451,16 @@ i.icon-file {
   align-items: center;
   justify-content: center;
 }
+.hiden-contacts p {
+  margin-bottom: 8px;
+}
+.hiden-contacts p a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #354753;
+}
 .coming-soon {
   height: 100vh;
   display: flex;
@@ -1013,6 +1023,7 @@ footer.footer-split .footer-inner {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2px 2px 3px 2px;
 }
 .pagination-custom .page-item .page-link-btn img {
   max-width: inherit;
@@ -1024,7 +1035,6 @@ footer.footer-split .footer-inner {
 .pagination-custom .page-item:last-child .page-link {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  padding: 3px 14px 7px;
 }
 .btn-custom {
   padding: 16px 32px;
