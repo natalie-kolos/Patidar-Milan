@@ -23,6 +23,15 @@
   }
 }
 
+.btn-neutal-secondary-border {
+  border: 1px solid @gray;
+  color: @gray!important;
+  &:hover {
+    color: lighten(@gray, 20%);
+    border-color: lighten(@gray, 20%);
+  }
+}
+
 .btn-custom-primary {
   background: @gradient-primary;
   color: @white;

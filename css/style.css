@@ -461,6 +461,13 @@ i.icon-file {
   text-decoration: none;
   color: #354753;
 }
+.deactivated-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: #354753;
+}
 .coming-soon {
   height: 100vh;
   display: flex;
@@ -1036,6 +1043,31 @@ footer.footer-split .footer-inner {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
+.modal-custom .modal-header {
+  border: 0;
+  padding: 2rem 2rem 0 2rem;
+}
+.modal-custom .modal-footer {
+  border: 0;
+  justify-content: center;
+  padding: 0 2rem 2rem 2rem;
+}
+.modal-custom .modal-body {
+  text-align: center;
+  padding: 2rem 2rem 0 2rem;
+}
+.modal-custom .modal-body h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+.modal-custom.alarm h3 {
+  color: #5a2230;
+}
+.modal-custom.success h3 {
+  color: #e2b090;
+}
 .btn-custom {
   padding: 16px 32px;
   border-radius: 40px;
@@ -1056,6 +1088,14 @@ footer.footer-split .footer-inner {
 .btn-custom-secondary-border:hover {
   color: #a43e57;
   border-color: #a43e57;
+}
+.btn-neutal-secondary-border {
+  border: 1px solid #354753;
+  color: #354753 !important;
+}
+.btn-neutal-secondary-border:hover {
+  color: #5d7c91;
+  border-color: #5d7c91;
 }
 .btn-custom-primary {
   background: linear-gradient(90deg, #d2611a 0%, #d29971 100%);

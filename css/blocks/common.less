@@ -459,3 +459,35 @@ footer.footer-split {
     }
   }
 }
+
+.modal-custom {
+  .modal-header {
+    border: 0;
+    padding: 2rem 2rem 0 2rem;
+  }
+  .modal-footer {
+    border: 0;
+    justify-content: center;
+    padding: 0 2rem 2rem 2rem;
+  }
+  .modal-body {
+    text-align: center;
+    padding: 2rem 2rem 0 2rem;
+    h3 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 44px;
+      text-transform: uppercase;
+    }
+  }
+  &.alarm {
+    h3 {
+      color: @secondary-patidar;
+    }
+  }
+  &.success {
+    h3 {
+      color: @primary-patidar;
+    }
+  }
+}
