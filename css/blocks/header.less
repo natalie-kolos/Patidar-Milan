@@ -19,22 +19,20 @@
       margin-top: 20px;
     }
   }
-
-  .header__log-out {
-    flex-wrap: wrap;
-    justify-content: center;
+}
+.header__log-out {
+  flex-wrap: wrap;
+  justify-content: center;
+  @media @breakpoint-mobile {
+    flex-direction: column-reverse;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  img {
+    max-width: 250px;
     @media @breakpoint-mobile {
-      flex-direction: column-reverse;
-    }
-
-    &:hover {
-      opacity: 0.8;
-    }
-    img {
-      max-width: 250px;
-      @media @breakpoint-mobile {
-        max-width: 180px;
-      }
+      max-width: 180px;
     }
   }
   .nav {

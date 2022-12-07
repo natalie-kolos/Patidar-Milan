@@ -281,8 +281,8 @@ footer.footer-split {
     background-repeat: repeat-x;
     padding: 0 60px;
     position: absolute;
-    width: calc(100% - 120px);
-    left: 60px;
+    width: calc(100% - 144px);
+    left: 72px;
     height: 2px;
     margin-top: 33px;
     z-index: -1;
@@ -290,6 +290,7 @@ footer.footer-split {
 
   .nav-item-steps {
     text-align: center;
+    flex: 1;
     i.step-icon {
       content: url(..//img/icon-step-def.svg);
     }
@@ -297,6 +298,9 @@ footer.footer-split {
       font-size: 14px;
       font-weight: 400;
       color: @black;
+      @media @breakpoint-mobile {
+        font-size: 12px;
+      }
       &:hover {
         color: lighten(@black, 20%);
       }

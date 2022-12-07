@@ -452,3 +452,51 @@ i.icon-file {
   text-align: center;
   color: @gray;
 }
+
+.registration-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  .profile-photo {
+    display: flex;
+    align-items: flex-start;
+    @media @breakpoint-mobile {
+      align-items: stretch;
+      flex-direction: column;
+    }
+    img {
+      border-radius: @border-radius;
+      @media @breakpoint-mobile {
+        border-radius: @border-radius-mob;
+        margin-bottom: 12px;
+      }
+    }
+    .profile-photo__additional {
+      display: flex;
+      width: calc(50% - 8px);
+      flex-direction: column;
+      margin-left: 7px;
+      @media @breakpoint-mobile {
+        width: auto;
+        flex-direction: row;
+        margin-left: 0;
+      }
+      img {
+        max-width: 156px;
+        margin-bottom: 6px;
+        @media @breakpoint-mobile {
+          max-width: auto;
+          width: calc(50% - 8px);
+          margin-bottom: 0;
+          margin-right: 12px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+          @media @breakpoint-mobile {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
