@@ -230,7 +230,7 @@ i.icon-file {
   font-weight: 600;
   color: #354753;
 }
-.profile .profile-photo img {
+.profile .profile-photo a img {
   border-radius: 16px;
   width: 100%;
   margin-bottom: 16px;
@@ -242,9 +242,8 @@ i.icon-file {
 }
 .profile .profile-photo .profile-photo__additional {
   display: flex;
-  width: calc(50% - 8px);
 }
-.profile .profile-photo .profile-photo__additional img + img {
+.profile .profile-photo .profile-photo__additional a + a {
   margin-left: 16px;
 }
 .profile .profile-photo-mobile {

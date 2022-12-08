@@ -205,19 +205,20 @@ i.icon-file {
 }
 .profile {
   .profile-photo {
-    img {
-      border-radius: @border-radius;
-      width: 100%;
-      margin-bottom: 16px;
+    a {
+      img {
+        border-radius: @border-radius;
+        width: 100%;
+        margin-bottom: 16px;
+      }
     }
     @media @breakpoint-mobile {
       display: none;
     }
     .profile-photo__additional {
       display: flex;
-      width: calc(50% - 8px);
 
-      img + img {
+      a + a {
         margin-left: 16px;
       }
     }
