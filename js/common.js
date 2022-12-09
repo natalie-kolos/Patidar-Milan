@@ -111,8 +111,9 @@ function countryCheck(that) {
     }
     }
 }
+if(document.querySelectorAll('.js-date')[0]){
 var input = document.querySelectorAll('.js-date')[0];
-  
+
 var dateInputMask = function dateInputMask(elm) {
   elm.addEventListener('keypress', function(e) {
     if(e.keyCode < 47 || e.keyCode > 57) {
@@ -142,3 +143,4 @@ var dateInputMask = function dateInputMask(elm) {
 };
   
 dateInputMask(input);
+}
