@@ -358,7 +358,8 @@
                   <button type="submit" class="btn btn-custom btn-custom-secondary-border mb-3">
                     Cancel
                   </button>
-                  <button type="submit" class="btn btn-custom btn-custom-secondary mb-3">
+                  <button type="submit" class="btn btn-custom btn-custom-secondary mb-3" data-bs-toggle="modal"
+                    data-bs-target="#successModal">
                     Save
                   </button>
                 </div>
@@ -431,6 +432,26 @@
           <button type="button" class="btn btn-custom btn-custom-secondary-border btn-neutal-secondary-border"
             data-bs-dismiss="modal">Cancel</button>
           <button type="button" class="btn btn-custom btn-custom-secondary-border">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for Thank you-->
+  <div class="modal modal-custom success fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3>Success!</h3>
+          <p>Sem a volutpat vel ullamcorper massa ullamcorper. A suscipit volutpat, mauris sit integer sem vitae odio.
+            Elit proin massa purus at pulvinar viverra quam consectetur adipiscing. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-custom btn-custom-secondary-border btn-neutal-secondary-border"
+            data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
