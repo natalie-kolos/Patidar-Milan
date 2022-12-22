@@ -206,6 +206,7 @@ img {
 }
 .page-title .subtitle {
   font-size: 20px;
+  opacity: 0.7;
 }
 @media (max-width: 767px) {
   .page-title .subtitle {
@@ -677,6 +678,7 @@ i.icon-file {
 }
 .hero p {
   font-size: 20px;
+  opacity: 0.7;
 }
 @media (max-width: 767px) {
   .hero p {
@@ -840,6 +842,17 @@ footer .footer-inner {
 }
 footer .footer-inner .nav-link {
   color: #5a2230;
+}
+@media (max-width: 1220px) {
+  footer .footer-inner .nav-link {
+    padding: 12px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 991px) {
+  footer .footer-inner .nav-link {
+    font-size: 14px;
+  }
 }
 @media (max-width: 767px) {
   footer .footer-inner .nav {
@@ -1128,6 +1141,9 @@ footer.footer-split .footer-inner {
 }
 .modal-custom.success h3 {
   color: #e2b090;
+}
+.link-light {
+  font-weight: 400 !important;
 }
 .btn-custom {
   padding: 16px 32px;
