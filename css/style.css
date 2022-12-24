@@ -886,6 +886,10 @@ footer.footer-split .footer-inner {
     padding: 24px 16px;
   }
 }
+.form-custom .g-recaptcha {
+  display: flex;
+  justify-content: center;
+}
 .form-custom .form-control,
 .form-custom .form-select {
   border-radius: 16px;
