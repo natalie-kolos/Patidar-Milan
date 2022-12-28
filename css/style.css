@@ -872,8 +872,19 @@ footer.footer-split .footer-inner {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+@media (max-width: 767px) {
+  .image-block {
+    justify-content: flex-start;
+  }
+}
 .image-block img {
   margin: 12px;
+}
+@media (max-width: 767px) {
+  .image-block img {
+    margin: 0;
+    margin-bottom: 12px;
+  }
 }
 .form-custom {
   background-color: #f3f3f3;

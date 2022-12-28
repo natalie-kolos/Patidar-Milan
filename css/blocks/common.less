@@ -202,8 +202,15 @@ footer.footer-split {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  @media @breakpoint-mobile {
+    justify-content: flex-start;
+  }
   img {
     margin: 12px;
+    @media @breakpoint-mobile {
+      margin: 0;
+      margin-bottom: 12px;
+    }
   }
 }
 
