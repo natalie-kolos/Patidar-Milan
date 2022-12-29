@@ -342,6 +342,7 @@ i.icon-file {
 .profile .profile-content .favourites_title {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .profile .profile-content .favourites_title .favourites_number {
   display: inline-flex;
