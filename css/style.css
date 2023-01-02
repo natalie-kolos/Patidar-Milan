@@ -525,6 +525,11 @@ i.icon-file {
     margin-right: 0;
   }
 }
+@media (max-width: 767px) {
+  .manage-profile aside {
+    display: none;
+  }
+}
 .coming-soon {
   height: 100vh;
   display: flex;
@@ -879,11 +884,10 @@ footer.footer-split .footer-inner {
   }
 }
 .image-block img {
-  margin: 12px;
+  margin-bottom: 24px;
 }
 @media (max-width: 767px) {
   .image-block img {
-    margin: 0;
     margin-bottom: 12px;
   }
 }
@@ -949,16 +953,21 @@ footer.footer-split .footer-inner {
   background-color: #ffffff;
   border-radius: 16px;
 }
-.form-plain-text-custom a {
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .form-custom .form-floating label {
+    font-size: 12px;
+  }
+}
+.form-custom .form-plain-text-custom a {
   color: #5a2230;
   text-decoration: none;
   font-weight: 600;
 }
-.form-plain-text-custom label {
+.form-custom .form-plain-text-custom label {
   color: #354753;
   opacity: 0.7;
 }
-.form-plain-text-custom .form-control-plaintext {
+.form-custom .form-plain-text-custom .form-control-plaintext {
   color: #000000;
 }
 .nav-steps {
