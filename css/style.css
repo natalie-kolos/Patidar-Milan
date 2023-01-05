@@ -910,6 +910,15 @@ footer.footer-split .footer-inner {
 .form-custom .form-select {
   border-radius: 16px;
   border-color: transparent;
+  font-weight: 400;
+}
+.form-custom .close-input input {
+  border-top-right-radius: 16px !important;
+  border-bottom-right-radius: 16px !important;
+}
+.form-custom .close-input .btn-close {
+  height: 76px;
+  padding-left: 24px;
 }
 .form-custom a {
   color: #5a2230;
