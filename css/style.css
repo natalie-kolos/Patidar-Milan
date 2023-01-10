@@ -547,6 +547,12 @@ i.icon-file {
     height: 130px !important;
   }
 }
+@media (max-width: 767px) {
+  .preview1 {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
 .preview2 {
   text-align: center;
   overflow: hidden;
@@ -561,6 +567,12 @@ i.icon-file {
     height: 130px !important;
   }
 }
+@media (max-width: 767px) {
+  .preview2 {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
 .preview {
   text-align: center;
   overflow: hidden;
@@ -573,6 +585,12 @@ i.icon-file {
   .preview {
     width: 130px !important;
     height: 130px !important;
+  }
+}
+@media (max-width: 767px) {
+  .preview {
+    margin-left: 0px;
+    margin-top: 10px;
   }
 }
 .cropper-container {
