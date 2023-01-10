@@ -1038,6 +1038,9 @@ footer.footer-split .footer-inner {
     font-size: 12px;
   }
 }
+.form-custom .form-floating label.dateOfBirth {
+  font-size: 12px;
+}
 .form-plain-text-custom label {
   color: #354753;
   opacity: 0.7;
