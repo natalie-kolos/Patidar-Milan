@@ -533,6 +533,48 @@ i.icon-file {
     display: none;
   }
 }
+.preview1 {
+  text-align: center;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  margin: 10px;
+  border: 1px solid #5a2230;
+}
+@media (max-width: 991px) {
+  .preview1 {
+    width: 130px;
+    height: 130px;
+  }
+}
+.preview2 {
+  text-align: center;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  margin: 10px;
+  border: 1px solid #5a2230;
+}
+@media (max-width: 991px) {
+  .preview2 {
+    width: 130px;
+    height: 130px;
+  }
+}
+.preview {
+  text-align: center;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  margin: 10px;
+  border: 1px solid #5a2230;
+}
+@media (max-width: 991px) {
+  .preview {
+    width: 130px;
+    height: 130px;
+  }
+}
 .coming-soon {
   height: 100vh;
   display: flex;
