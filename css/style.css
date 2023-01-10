@@ -968,6 +968,11 @@ footer.footer-split .footer-inner {
     padding: 24px 16px;
   }
 }
+@media (max-width: 1220px) {
+  .form-custom {
+    padding: 24px 16px;
+  }
+}
 .form-custom .g-recaptcha {
   display: flex;
   justify-content: center;
