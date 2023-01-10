@@ -538,13 +538,13 @@ i.icon-file {
   overflow: hidden;
   width: 160px;
   height: 160px;
-  margin: 10px;
+  margin-left: 10px;
   border: 1px solid #5a2230;
 }
 @media (max-width: 991px) {
   .preview1 {
-    width: 130px;
-    height: 130px;
+    width: 130px !important;
+    height: 130px !important;
   }
 }
 .preview2 {
@@ -552,13 +552,13 @@ i.icon-file {
   overflow: hidden;
   width: 160px;
   height: 160px;
-  margin: 10px;
+  margin-left: 10px;
   border: 1px solid #5a2230;
 }
 @media (max-width: 991px) {
   .preview2 {
-    width: 130px;
-    height: 130px;
+    width: 130px !important;
+    height: 130px !important;
   }
 }
 .preview {
@@ -566,17 +566,17 @@ i.icon-file {
   overflow: hidden;
   width: 160px;
   height: 160px;
-  margin: 10px;
+  margin-left: 10px;
   border: 1px solid #5a2230;
 }
 @media (max-width: 991px) {
   .preview {
-    width: 130px;
-    height: 130px;
+    width: 130px !important;
+    height: 130px !important;
   }
 }
 .cropper-container {
-  width: 100%;
+  width: 100% !important;
 }
 .coming-soon {
   height: 100vh;
