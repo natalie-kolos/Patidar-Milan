@@ -575,6 +575,9 @@ i.icon-file {
     height: 130px;
   }
 }
+.cropper-container {
+  width: 100%;
+}
 .coming-soon {
   height: 100vh;
   display: flex;
