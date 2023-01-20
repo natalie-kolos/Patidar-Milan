@@ -1038,7 +1038,7 @@ footer.footer-split .footer-inner {
     font-size: 12px;
   }
 }
-.form-custom .form-floating label.dateOfBirth {
+.form-custom .form-floating label .dateOfBirth {
   font-size: 12px;
 }
 .form-plain-text-custom label {
@@ -1264,6 +1264,16 @@ footer.footer-split .footer-inner {
   color: #354753;
   margin-bottom: 18px;
   width: fit-content;
+}
+.pageLoader {
+  background: url(..//img/loader1.gif) no-repeat center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999999;
+  background-color: #ffffff8c;
 }
 .btn-custom {
   padding: 16px 32px;
