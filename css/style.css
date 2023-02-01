@@ -1266,9 +1266,7 @@ footer.footer-split .footer-inner {
   width: fit-content;
 }
 .loader .pageLoader {
-  background: url(..//img/spinner.gif);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(..//img/spinner.gif) no-repeat center center;
   background-size: 200px 200px;
   position: fixed;
   top: 0;
