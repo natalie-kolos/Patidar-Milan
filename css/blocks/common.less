@@ -555,13 +555,28 @@ footer.footer-split {
   width: fit-content;
 }
 
-.pageLoader {
-  background: url(..//img/loader1.gif) no-repeat center center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 9999999;
-  background-color: #ffffff8c;
+// .pageLoader {
+//   background: url(..//img/loader1.gif) no-repeat center center;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   z-index: 9999999;
+//   background-color: #ffffff8c;
+// }
+.loader {
+  .pageLoader {
+    background: url(..//img/spinner.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+    background-color: #ffffff8c;
+  }
 }

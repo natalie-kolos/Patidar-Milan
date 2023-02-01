@@ -1265,8 +1265,11 @@ footer.footer-split .footer-inner {
   margin-bottom: 18px;
   width: fit-content;
 }
-.pageLoader {
-  background: url(..//img/loader1.gif) no-repeat center center;
+.loader .pageLoader {
+  background: url(..//img/spinner.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
   position: fixed;
   top: 0;
   left: 0;
